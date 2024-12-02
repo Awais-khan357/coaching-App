@@ -1,0 +1,36 @@
+.sub-coaches-list {
+  display: flex;
+  width: 670px;
+  justify-content: center;
+  overflow-x: auto; 
+  padding-bottom: 20px; 
+}
+
+.sub-coaches-list::-webkit-scrollbar {
+  height: 5px; 
+}
+
+.sub-coaches-list::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.sub-coaches-list::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+.coach-item {
+  min-width: 170px; 
+  text-align: center;
+  border-right: 1px solid rgb(160, 155, 155); 
+  padding: 10px; 
+}
+
+.coach-item:last-child {
+  border-right: none; 
+}
+
+
+.hover-bg-light:hover {
+  background-color: #f8f9fa; 
+}

@@ -1,0 +1,66 @@
+  .scroll-card {
+    height: 300px; /* Fixed height for the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* Adjust button size */
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    overflow-y: auto; /* Enable scrolling for button area */
+    max-height: 150px; /* Adjust max height for scrolling buttons */
+  }
+  
+  .grid-button {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .grid-button:hover {
+    background-color: #e6e6e6;
+  }
+  
+  .scroll-content {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    max-height: 100px; 
+  }
+  
+  .scroll-content li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .scroll-content::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .scroll-content::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+  }
+  
+  .scroll-content::-webkit-scrollbar-track {
+    background: #f0f0f0;
+  }
+  
+  .manage-btn {
+    display: block;
+    text-align: right;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .manage-btn:hover {
+    text-decoration: underline;
+  }
+  
